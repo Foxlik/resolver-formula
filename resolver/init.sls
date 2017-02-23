@@ -25,6 +25,7 @@ resolv-file:
     - name: /etc/resolvconf/resolv.conf.d/base
     {% else %}
     - name: /etc/resolv.conf
+    - follow_symlinks: False
     {% endif %}
     - user: root
     - group: root
